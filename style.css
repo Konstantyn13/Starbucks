@@ -1,20 +1,23 @@
 *,
 *::after,
 *::before {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
 header {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
 .navbar {
     display: flex;
     align-items: center;
     gap: 1rem;
 }
+
 li, ul {
     list-style-type: none;
     display: flex;
@@ -22,33 +25,37 @@ li, ul {
     justify-content: center;
     gap: 1rem;
 }
+
 .logo-img {
     width: 50px;
     height: 50px;
 }
+
 .nav-link {
     text-decoration: none;
     color: black;
     font-weight: bold;
 }
+
 .hero-title {
-  max-width: 650px;
-  margin: 0;
-  font-family: Arial, sans-serif;
-  font-size: 32px;
-  font-weight: 800;
-  line-height: 1.08;
-  letter-spacing: -0.03em;
-  color: #173f35;
+    max-width: 650px;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+    color: #173f35;
 }
 
 .hero-title__intro {
-  display: block;
-  margin-bottom: 20px;
-  font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 0.04em;
+    display: block;
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
 }
+
 body {
     display: flex;
     flex-direction: column;
@@ -56,6 +63,7 @@ body {
     justify-content: center;
     align-items: center;
 }
+
 .hero {
     display: flex;
     flex-direction: column;
@@ -63,6 +71,7 @@ body {
     align-items: center;
     margin-top: 120px;
 }
+
 .hero-img {
     width: 800px;
     height: 500px;
@@ -70,26 +79,399 @@ body {
     object-position: center;
     margin-top: 20px;
 }
+
 .btn {
     width: 220px;
-height: 56px;
-margin: 24px 0 0;
-padding: 16px 24px;
-
-background-color: #173F35;
-color: #FFFFFF;
-border: none;
-border-radius: 12px;
-
-font-family: Arial, sans-serif;
-font-size: 16px;
-font-weight: 600;
-line-height: 24px;
-text-align: center;
-
-cursor: pointer;
-transition: background-color 0.2s ease;
+    height: 56px;
+    margin: 24px 0 0;
+    padding: 16px 24px;
+    background-color: #173F35;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
 }
+
 .btn:hover {
     background-color: #24594B;
+}
+
+/* Наступні секції: палітра та кнопки з початкового дизайну */
+html {
+    scroll-behavior: smooth;
+}
+
+.hero-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.coffee-section {
+    width: 100%;
+    max-width: 800px;
+    margin: 100px auto 0;
+    font-family: Arial, sans-serif;
+    color: #173f35;
+    scroll-margin-top: 32px;
+}
+
+.section-eyebrow {
+    margin-bottom: 16px;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #52665e;
+}
+
+.coffee-section h2 {
+    font-size: 36px;
+    line-height: 1.15;
+    letter-spacing: -1px;
+}
+
+.coffee-story {
+    padding: 48px 40px;
+    text-align: center;
+}
+
+.story-text {
+    max-width: 650px;
+    margin: 24px auto 0;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.story-text span {
+    color: #65766e;
+}
+
+.section-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.section-heading > p {
+    flex-shrink: 0;
+    color: #52665e;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.drink-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+}
+
+.drink-card {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    border: 1px solid #e3e9e5;
+    border-radius: 12px;
+    background: #fff;
+}
+
+.drink-photo {
+    display: block;
+    width: 100%;
+    height: 155px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.drink-photo--iced {
+    object-position: 85% center;
+}
+
+.drink-content {
+    padding: 18px 14px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.drink-tag {
+    font-size: 10px;
+    color: #52665e;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 12px;
+}
+
+.drink-content h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.drink-content > p:not(.drink-tag) {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #52665e;
+    margin-bottom: 22px;
+}
+
+.drink-link {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    margin-top: auto;
+    padding-top: 14px;
+    border-top: 1px solid #e3e9e5;
+    color: #173f35;
+    font-size: 12px;
+    line-height: 1.5;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.drink-link:hover {
+    text-decoration: underline;
+}
+
+.choose-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.choose-intro {
+    margin-top: 20px;
+    color: #52665e;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.coffee-steps {
+    margin-top: 28px;
+    list-style: none;
+}
+
+.coffee-steps li {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.coffee-steps li > span {
+    flex-shrink: 0;
+    display: grid;
+    place-items: center;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #d7e2da;
+    border-radius: 50%;
+    font-size: 12px;
+}
+
+.coffee-steps h3 {
+    font-size: 16px;
+    margin-bottom: 6px;
+}
+
+.coffee-steps p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #52665e;
+}
+
+.choose-image {
+    width: 100%;
+    height: 470px;
+    object-fit: cover;
+    object-position: 78% center;
+    border-radius: 12px;
+}
+
+.questions-section {
+    padding: 40px;
+    border-radius: 12px;
+    background: #f8f1e7;
+}
+
+.coffee-faq {
+    margin-top: 28px;
+}
+
+.coffee-faq details {
+    border-bottom: 1px solid #d8ded5;
+}
+
+.coffee-faq summary {
+    cursor: pointer;
+    padding: 20px 0;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.5;
+}
+
+.coffee-faq details p {
+    padding: 0 0 20px;
+    color: #52665e;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.coffee-footer {
+    width: 100%;
+    max-width: 800px;
+    margin: 80px auto 0;
+    padding: 32px 0;
+    border-top: 1px solid #e3e9e5;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    font-family: Arial, sans-serif;
+    color: #52665e;
+}
+
+.footer-brand {
+    color: #173f35;
+    font-size: 20px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.coffee-footer p {
+    margin-top: 10px;
+    font-size: 14px;
+}
+
+.coffee-footer nav {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.coffee-footer nav a {
+    font-size: 14px;
+    color: #173f35;
+    text-decoration: none;
+}
+
+.coffee-footer nav a:hover {
+    text-decoration: underline;
+}
+
+.coffee-footer small {
+    width: 100%;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+a:focus-visible, summary:focus-visible {
+    outline: 3px solid #c58b52;
+    outline-offset: 5px;
+}
+
+@media (max-width: 850px) {
+    main {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .hero-img {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 8 / 5;
+    }
+
+    .coffee-footer {
+        width: calc(100% - 40px);
+    }
+
+    .drink-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 540px) {
+    .navbar {
+        gap: 12px;
+    }
+
+    .navbar ul {
+        gap: 12px;
+    }
+
+    .hero {
+        margin-top: 64px;
+    }
+
+    .hero-title__intro {
+        font-size: 15px;
+    }
+
+    .coffee-section {
+        margin-top: 64px;
+    }
+
+    .coffee-story {
+        padding: 24px 0;
+    }
+
+    .coffee-section h2 {
+        font-size: 28px;
+    }
+
+    .story-text {
+        font-size: 20px;
+    }
+
+    .section-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .choose-section {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .choose-image {
+        height: 350px;
+    }
+
+    .questions-section {
+        padding: 24px 20px;
+    }
+
+    .drink-grid {
+        gap: 12px;
+    }
+
+    .drink-content {
+        padding: 16px 12px;
+    }
+
+    .drink-content h3 {
+        font-size: 18px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
 }

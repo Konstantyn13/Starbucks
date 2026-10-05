@@ -1,26 +1,27 @@
-<!DOCTYPE html>
-<html lang="en">
+﻿<!DOCTYPE html>
+<html lang="uk">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Пауза зі смаком — кава</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="https://thumb.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/330px-Starbucks_Corporation_Logo_2011.svg.png?utm_source=sco.wikipedia.org&utm_campaign=index&utm_content=thumbnail&_=20170312192423">
 </head>
 <body>
     <header>
         <nav class="navbar">
-            <div class="logo"><img src="https://thumb.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/330px-Starbucks_Corporation_Logo_2011.svg.png?utm_source=sco.wikipedia.org&utm_campaign=index&utm_content=thumbnail&_=20170312192423"
-                 alt="logo" class="logo-img"></div>
+            <div class="logo"><a href="index.html"><img src="https://thumb.wikimedia.org/wikipedia/sco/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/330px-Starbucks_Corporation_Logo_2011.svg.png?utm_source=sco.wikipedia.org&utm_campaign=index&utm_content=thumbnail&_=20170312192423"
+                 alt="logo" class="logo-img"></a></div>
             <ul>
-                <li><a href="#" class="nav-link">Home</a></li>
-                <li><a href="#" class="nav-link">About</a></li>
-                <li><a href="#" class="nav-link">Contact</a></li>
-                <li><a href="#" class="nav-link">Career</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#questions" class="nav-link">FAQ</a></li>
+                <li><a href="#drinks" class="nav-link">Menu</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section class="hero">
+        <section class="hero" id="home">
             <h1 class="hero-title">
   <span class="hero-title__intro">
     Твій день. Твій смак. Твоя кава.
@@ -28,7 +29,68 @@
   Місто поспішає.<br>
   Ти — смакуй.
 </h1>
-<img src="./img/hero-caramel-latte.png" alt="Кава" class="hero-img">
-<button class="btn">Обрати свою каву</button>
+<img src="./img/hero-caramel-latte.webp" alt="Кава" fetchpriority="high" class="hero-img">
+<a class="btn hero-link" href="#drinks">Обрати свою каву</a>
+        </section>
+        <section class="coffee-story coffee-section" id="about">
+            <p class="section-eyebrow">Пауза зі смаком</p>
+            <h2 id="story-title">Твоя кава —<br>твоя маленька пауза.</h2>
+            <p class="story-text">Насичений еспресо, ніжне молоко та улюблений смак. <span>Зупинись на мить, вдихни аромат і насолодись моментом.</span></p>
+        </section>
+
+        <section class="coffee-section" id="drinks">
+            <div class="section-heading">
+                <div><p class="section-eyebrow">Знайди свій смак</p><h2 id="drinks-title">Що смакує тобі сьогодні?</h2></div>
+                <p>Від кавової класики<br>до карамельного настрою.</p>
+            </div>
+            <div class="drink-grid">
+                <article class="drink-card">
+                    <img class="drink-photo" src="./img/espresso-card.webp" alt="Еспресо із золотистою крема в білій чашці" loading="lazy">
+                    <div class="drink-content"><p class="drink-tag">01 / Насичений</p><h3>Еспресо</h3><p>Маленька чашка з виразним характером. Для тих, хто любить чистий кавовий смак.</p><a class="drink-link" href="#choose">Мій кавовий характер <span aria-hidden="true">↗</span></a></div>
+                </article>
+                <article class="drink-card">
+                    <img class="drink-photo" src="./img/cappuccino-card.webp" alt="Капучино з молочною пінкою та сердечком" loading="lazy">
+                    <div class="drink-content"><p class="drink-tag">02 / Збалансований</p><h3>Капучино</h3><p>Еспресо, тепле молоко й повітряна пінка. Ніжність, у якій відчувається кава.</p><a class="drink-link" href="#choose">Знайти свій баланс <span aria-hidden="true">↗</span></a></div>
+                </article>
+                <article class="drink-card">
+                    <img class="drink-photo" src="./img/latte-card.webp" alt="Гарячий лате в прозорій склянці" loading="lazy">
+                    <div class="drink-content"><p class="drink-tag">03 / Ніжний</p><h3>Лате</h3><p>М’який молочний смак і легка пінка. Для моментів, які хочеться продовжити.</p><a class="drink-link" href="#choose">Додати ніжності <span aria-hidden="true">↗</span></a></div>
+                </article>
+                <article class="drink-card">
+                    <img class="drink-photo drink-photo--iced" src="./img/hero-caramel-latte.webp" alt="Карамельний айс-лате з кубиками льоду" loading="lazy">
+                    <div class="drink-content"><p class="drink-tag">04 / Карамельний</p><h3>Айс-лате</h3><p>Кава, молоко, лід і карамельний акцент. Прохолодний напій для неспішної прогулянки.</p><a class="drink-link" href="#choose">Мій десертний настрій <span aria-hidden="true">↗</span></a></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="coffee-section choose-section" id="choose">
+            <div class="choose-copy">
+                <p class="section-eyebrow">Три прості кроки</p>
+                <h2 id="choose-title">Твій смак.<br>Твої правила.</h2>
+                <p class="choose-intro">Хороша кава починається з того, що подобається саме тобі.</p>
+                <ol class="coffee-steps">
+                    <li><span>01</span><div><h3>Обери характер</h3><p>Виразна кава чи більше молочної ніжності?</p></div></li>
+                    <li><span>02</span><div><h3>Визначся з настроєм</h3><p>Зігріти долоні чи освіжитися напоєм із льодом?</p></div></li>
+                    <li><span>03</span><div><h3>Зроби паузу</h3><p>Знайди час для себе й насолодись першим ковтком.</p></div></li>
+                </ol>
+                <a class="btn hero-link" href="#drinks">Переглянути напої</a>
+            </div>
+            <img class="choose-image" src="./img/hero-caramel-latte.webp" alt="Карамельний айс-лате з льодом у сонячній кав’ярні" loading="lazy">
+        </section>
+
+        <section class="coffee-section questions-section" id="questions">
+            <p class="section-eyebrow">Трохи більше про каву</p>
+            <h2 id="questions-title">Є питання? Розберімося.</h2>
+            <div class="coffee-faq">
+                <details><summary>Чим лате відрізняється від капучино?</summary><p>У лате зазвичай більше молока й тонший шар пінки, тому його смак м’якший. У капучино кавовий акцент виразніший.</p></details>
+                <details><summary>Що обрати, якщо не люблю солодке?</summary><p>Еспресо або класичні капучино й лате без сиропів. У молока є природна солодкість, а сиропи додають десертного смаку.</p></details>
+                <details><summary>З чого почати, якщо люблю ніжний смак?</summary><p>Спробуй лате: молоко пом’якшує смак еспресо. А якщо хочеться більше відчувати каву — обери капучино.</p></details>
+            </div>
         </section>
     </main>
+    <footer class="coffee-footer">
+        <div><a class="footer-brand" href="#home">Пауза зі смаком</a><p>Місто поспішає. Ти — смакуй.</p></div>
+        <nav><a href="#about">Про каву</a><a href="#drinks">Напої</a><a href="#questions">Питання</a></nav>
+    </footer>
+</body>
+</html>
